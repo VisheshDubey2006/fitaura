@@ -1,24 +1,74 @@
-# Compiled class file
+# ==========================================
+# Fitaura - Root Git Ignore
+# ==========================================
+
+# ---------- Environment & Secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Spring Boot / Java ----------
+target/
 *.class
 
-# Log file
+# Maven generated files
+.mvn/timing.properties
+
+# ---------- IDEs ----------
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse / Spring Tool Suite
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache
+.apt_generated
+.factorypath
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ---------- Build Files ----------
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ---------- Logs ----------
 *.log
+logs/
 
-# BlueJ files
-*.ctxt
+# ---------- Frontend / Node ----------
+node_modules/
+dist/
+build/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# ---------- Temporary Files ----------
+*.tmp
+*.temp
+*.swp
+*.swo
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# ---------- Operating System ----------
+.DS_Store
+Thumbs.db
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# ---------- Local Database / Data ----------
+*.db
+*.sqlite
+*.sqlite3
+
+# ---------- Coverage / Test Reports ----------
+coverage/
+*.coverage
+
+# ---------- Spring Boot generated files ----------
+HELP.md
